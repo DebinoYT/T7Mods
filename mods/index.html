@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Browse Black Ops 3 community projects and map showcases from T7Mods.">
+    <meta name="theme-color" content="#101214">
+    <title>Mods &amp; Projects — T7Mods</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="../scripts/site.js"></script>
+  </head>
+  <body data-page="mods">
+    <div id="site-header"></div>
+    <main class="wrap">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Mods</span>
+      </nav>
+      <header class="page-hero">
+        <p class="eyebrow">COMMUNITY PROJECTS</p>
+        <h1>Mods &amp; Maps</h1>
+        <p class="lead">Explore the Black Ops 3 map environments preserved in the T7Mods image archive. The current repository contains screenshots, not project downloads or release listings.</p>
+      </header>
+      <section class="page-content project-directory" id="projects">
+        <div class="directory-toolbar">
+          <div class="directory-toolbar-heading">
+            <p class="eyebrow">MAP IMAGE ARCHIVE</p>
+            <span id="mod-count" class="result-count" aria-live="polite"></span>
+          </div>
+          <div class="filters">
+            <label class="sr-only" for="mod-search">Search projects</label>
+            <input class="search-field" id="mod-search" type="search" placeholder="Search map images…">
+            <label class="sr-only" for="mod-filter">Filter by type</label>
+            <select class="filter-select" id="mod-filter">
+              <option value="all">All types</option>
+            </select>
+            <label class="sr-only" for="mod-sort">Sort projects</label>
+            <select class="filter-select" id="mod-sort">
+              <option value="featured">Archive order</option>
+              <option value="name">Name A–Z</option>
+            </select>
+          </div>
+        </div>
+        <div id="mod-catalog"></div>
+        <p class="catalog-note">Original map titles, creator credits, versions, and release links were not included with these images.</p>
+      </section>
+      <section class="next-actions">
+        <h2>Keep exploring</h2>
+        <a href="../wiki/index.html">Open the Wiki →</a>
+        <a href="../tutorials/index.html">Browse tutorials →</a>
+        <a href="../resources/index.html#tools">Find modding tools →</a>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+  </body>
+</html>

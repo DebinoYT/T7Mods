@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Practical Black Ops 3 modding tutorials, organized by task, topic, and difficulty.">
+    <meta name="theme-color" content="#101214">
+    <title>Tutorials — T7Mods</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="../scripts/site.js"></script>
+  </head>
+  <body data-page="tutorials">
+    <div id="site-header"></div>
+    <main class="wrap">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Tutorials</span>
+      </nav>
+      <header class="page-hero">
+        <p class="eyebrow">STEP-BY-STEP GUIDES</p>
+        <h1>Tutorials</h1>
+        <p class="lead">Practical walkthroughs for Black Ops 3 map makers and modders. Find a guide by topic, difficulty, or the task you want to complete.</p>
+      </header>
+      <section class="tutorial-start-paths" aria-label="Tutorial starting points"><a href="../wiki/mapping/index.html"><span class="eyebrow">MAP WORKFLOW</span><strong>Building an environment?</strong><span>Start with Mapping references ↗</span></a><a href="dog-rounds.html"><span class="eyebrow">ZOMBIES WORKFLOW</span><strong>Setting up Zombies?</strong><span>Set up dog rounds ↗</span></a><a href="install-skye-weapon-ports.html"><span class="eyebrow">WEAPON WORKFLOW</span><strong>Adding a weapon port?</strong><span>Install weapon ports ↗</span></a></section>
+      <section class="page-content tutorial-library">
+        <div class="library-toolbar">
+          <div>
+            <p class="eyebrow">LEARNING LIBRARY</p><span id="tutorial-count" class="result-count" aria-live="polite"></span>
+          </div>
+          <div class="filters">
+            <label class="sr-only" for="tutorial-search">Search tutorials</label>
+            <input class="search-field" id="tutorial-search" type="search" placeholder="Search tutorials…">
+            <label class="sr-only" for="tutorial-filter">Filter by topic</label>
+            <select class="filter-select" id="tutorial-filter">
+              <option value="all">All available topics</option>
+            </select>
+            <label class="sr-only" for="tutorial-level">Filter by difficulty</label>
+            <select class="filter-select" id="tutorial-level">
+              <option value="all">All levels</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+            </select>
+          </div>
+        </div>
+        <div id="tutorial-catalog" class="tutorial-list"></div>
+      </section>
+      <section class="next-actions">
+        <h2>Reference and tools</h2>
+        <a href="../wiki/index.html">Open the Wiki →</a>
+        <a href="../resources/index.html">Browse Resources →</a>
+        <a href="../mods/index.html">Explore map projects →</a>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+  </body>
+</html>

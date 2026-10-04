@@ -1,64 +1,29 @@
-# T7Mods Website
+# T7Mods
 
-Welcome to the **T7Mods Website** repository! This repository contains the code for the official T7Mods website, a central hub for resources, updates, and community interaction related to T7Mods.
+T7Mods is a resource hub for Call of Duty: Black Ops 3 modding. The website is a static HTML, CSS and vanilla JavaScript project hosted on GitHub Pages.
 
----
+## Pages
 
-## 🌟 About T7Mods
-T7Mods is a project dedicated to enhancing the Black Ops 3 modding experience, providing tools, guides, and a platform for modders and players alike. This website serves as the primary source of information and updates for the T7Mods community.
+- `index.html` — home page
+- `mods/index.html` — community project catalog
+- `mods/community-map-*.html` — details for the existing map screenshot assets
+- `wiki/index.html` — technical knowledge base sections
+- `wiki/*/index.html` — Wiki category pages
+- `tutorials/index.html` — searchable tutorial library
+- `tutorials/*.html` — individual tutorial pages
+- `resources/index.html` — tools, asset libraries, wikis and community links
+- `about/index.html` — about T7Mods
 
----
+## Editing content
 
-## 🚀 Getting Started
+Tutorial details and the tutorial catalog are defined in `scripts/site.js` in the `entries` array. Add a matching HTML file under `tutorials/` using one of the existing tutorial pages as a template. The original source notes remain in `content/tutorials/`.
 
-This repository contains the code for the website hosted via GitHub Pages at:
-[https://t7mods.github.io/T7ModsWebsite/](https://t7mods.github.io/T7ModsWebsite/)
+The `projects` array in `scripts/site.js` drives the homepage showcase and project catalog. Add only projects with real metadata and a matching static detail page. The current map entries use generic image labels because the repository contains no project titles, creator credits, or release URLs.
 
-### Cloning the Repository
-To clone this repository for development or internal use:
+Wiki category structure is defined by `wikiSections` in `scripts/site.js`; article text belongs in static HTML under `wiki/`. Resource links are listed in `resources/index.html`. Keep internal links relative so they work on both a custom domain and a GitHub Pages repository path.
 
-```bash
-git clone https://github.com/T7Mods/T7ModsWebsite.git
-```
+## Deploying
 
-### Structure
-The repository is organized as follows:
+Publish the repository root with GitHub Pages. No server, build step, environment variables, backend, or database is required. The existing `CNAME` file keeps the configured custom domain.
 
-```
-T7ModsWebsite/
-├── assets/
-│   ├── css/
-│   ├── images/
-│   └── js/
-├── index.html
-└── README.md
-```
-
-- **assets/**: Contains all static files such as CSS, JavaScript, and images.
-- **index.html**: The main landing page for the website.
-
----
-
-## ✨ Features
-- **Resources:** Centralized access to T7Mods tools and guides.
-- **Community Updates:** Stay informed about the latest news and developments.
-- **Responsive Design:** Optimized for viewing on all devices.
-
----
-
-## 🛠️ Development
-If you're working on updates or improvements to the website:
-
-1. Clone the repository.
-2. Create a new branch for your changes.
-3. Test thoroughly to ensure everything works as expected.
-4. Merge your branch into `main` and push to update the live site.
-
----
-
-## 📜 License
-This website and its contents are proprietary to T7Mods. Unauthorized use or reproduction is prohibited.
-
----
-
-**Last Updated:** January 27, 2025
+The site has no third-party runtime dependencies and uses system font fallbacks.

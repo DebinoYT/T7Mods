@@ -1,73 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 - T7Mods</title>
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KT2RYZD2BN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-KT2RYZD2BN');
-  </script>
-</head>
-<body class="error-body">
-  <nav>
-    <div class="logo">
-      <img src="assets/images/logo.png" alt="T7Mods Logo" class="logo-img">
-      T7Mods
-    </div>
-    <div class="nav-group">
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-      <div class="nav-menu">
-        <div class="nav-links">
-          <a href="/">Home</a>
-          <a href="/forum">Forum</a>
-          <a href="/members">Members</a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="The page you requested could not be found on T7Mods.">
+    <meta name="theme-color" content="#101214">
+    <title>Page not found — T7Mods</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts/site.js"></script>
+  </head>
+  <body data-page="404">
+    <div id="site-header"></div>
+    <main class="wrap">
+      <section class="page-hero">
+        <p class="eyebrow">404 · NOT FOUND</p>
+        <h1>This page isn’t here.</h1>
+        <p class="lead">The link may be outdated, or the page may have moved.</p>
+        <div class="actions error-actions">
+          <a class="button button-primary" href="index.html">Back to T7Mods <span aria-hidden="true">→</span></a>
+          <a class="button" href="tutorials/index.html">Browse tutorials</a>
         </div>
-      </div>
-    </div>
-  </nav>
-
-  <div class="error-page">
-    <div class="error-content">
-      <div class="error-header">PAGE NOT FOUND</div>
-      <div class="error-line"></div>
-      <div class="error-details">
-        <div class="error-code">ROUNDS SURVIVED: 404</div>
-        <div class="error-status">GAME OVER</div>
-        <div class="error-stats">
-          <span>SCORE: 935</span>
-          <span class="divider">|</span>
-          <span>ZOMBIES KILLED: 115</span>
-        </div>
-      </div>
-      <div class="error-message">PAGE NOT FOUND</div>
-      <div class="error-actions">
-        <a href="/" class="error-button primary">HOME</a>
-        <a href="/forum" class="error-button">FORUM</a>
-        <a href="/members" class="error-button">MEMBERS</a>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="footer-bottom">
-      <p>© 2025 T7Mods | Created with ❤️ by The T7Mods Team</p>
-      <a href="https://discord.gg/twPys8Y6pZ" class="footer-discord" target="_blank">
-        <i class="fab fa-discord"></i>
-      </a>
-    </div>
-  </footer>
-  <script type="module" src="scripts/nav.js"></script>
-</body>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+  </body>
 </html>
